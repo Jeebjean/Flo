@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+<style>
+  body{  
+ background-image: linear-gradient(300deg, red, hsl(178, 100%, 50%), yellow);
+ height: 100vh;
+}
+</style>
+<body>
+
+  
+<script>
+    const question = prompt("Salut Mme DEGBELO ! Commencons par une question simple. Donner l'un des prenoms de Votre mari svp")
+if(question == "Jean" || question == "Mahunan" || question == "Jeeb" || question == "Baptiste"){
+    alert("Tres bien Bae :) Passons a la deuxieme question")
+} else{ alert("Tu ne connais meme pas le prenons de ton mari :( C'est mechant")};
+
+const question1 = prompt("Te rappelles-tu de l'histoire de parfum le premier jour que je voulais t'embrasser?")
+    if (question1 == "Oui"){ 
+        prompt("Et pourquoi tu faisait genre tu n'ai pas interesser?")   
+    } else{alert("Avec ta tete on dirait la tete de mon penis tu ne peux pas te rappeler de ca.")}
+
+
+var  today = new Date();
+  var day = today.getDay();
+  var dayList = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  
+//   document.getElementById("day").innerHTML= "Today is : " + dayList[day]+ ".";
+         
+        
+  var hour = today.getHours();
+  var minute = today.getMinutes();
+  var second = today.getSeconds();
+       
+   var prepand = (hour >= 12)? "PM" : "AM";
+        hour = (hour >= 12)? hour - 12: hour;
+        
+        
+        
+        if(hour===0 && prepand === "PM"){
+        if(minute===0 && second === 0){
+        hour=12
+        prepand = "Noon"
+        }
+          else{
+          hour = 12
+          prepand = "PM"};
+        };
+        
+             if(hour===0 && prepand === "AM"){
+        if(minute===0 && second === 0){
+        hour=12
+        prepand = "Midnight"
+        }
+          else{
+          hour = 12
+          prepand = "AM"};
+        };
+        alert(`Il est  ${hour}:${minute}:${second} en temps reel depuis AGLA. Bisou bae !`);
+
+  </script> 
+</body>
+</html>
