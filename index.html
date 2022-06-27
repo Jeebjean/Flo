@@ -6,14 +6,33 @@
   <title>Frontend Mentor | Interactive rating component</title>
 </head>
 <style>
-  body{  
+  body{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: nowrap;
+    color: rgb(255, 90, 14); 
+    padding: 0 500px;
  background-image: linear-gradient(300deg, red, hsl(178, 100%, 50%), yellow);
  height: 100vh;
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+/* Changes the height and width of the main box */
+body {    
+    font-size: 20px ;
+    padding: 150px;
+}
+}
+
 </style>
 <body>
+ 
+  <p>Flo de Jeeb <br><br> 
+    La distance est grande entre nous, mais l'amour rapproche nos cœurs. J'ai hâte de te retrouver pour te prouver mon amour, te serrer dans mes bras, et te couvrir de baisers. J'espère que ces quelques lignes sauront susciter en toi un peu plus encore l'impatience de me retrouver. Nous profiterons alors comme il se doit de ces moments qui n'appartiennent qu'à nous.</p>
 
-  
 <script>
     const question = prompt("Salut Mme DEGBELO ! Commencons par une question simple. Donner l'un des prenoms de Votre mari svp")
 if(question == "Jean" || question == "Mahunan" || question == "Jeeb" || question == "Baptiste"){
